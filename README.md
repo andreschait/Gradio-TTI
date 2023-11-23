@@ -2,17 +2,13 @@
 
 Andres Chait, Tamir Babil, Yaron Schnitman and Avi Rotem
 
-**[Paper](https://arxiv.org/abs/2310.00390) | [HuggingFace 🤗 Demo](https://huggingface.co/spaces/alaa-lab/InstructCV)** | 
-[![Replicate](https://replicate.com/cjwbw/instructcv/badge)](https://replicate.com/cjwbw/instructcv) 
+**[Paper](https://arxiv.org/abs/2310.00390) | [HuggingFace 🤗 Demo](https://huggingface.co/spaces/andreschait/Gradio-TTI)** | 
+[![Replicate](https://replicate.com/andreschait/kapara-k9/badge)](https://replicate.com/andreschait/kapara-k9) 
 
 
-&#x1F31F; Official PyTorch implementation of **InstructCV**. The master branch works with **PyTorch 1.5+**.
+&#x1F31F; Official PyTorch implementation of **Gradio-TTI**. The master branch works with **PyTorch 1.5+**.
 
-<p align="center">
-    
-https://github.com/andreschait/gradio-tti/assets/21158134/db6ec741-a8ee-4c92-b0c3-0723ef800ffd
-
-</p>
+<p align="center">https://github.com/andreschait/Gradio-TTI/assets/4713280/4c309b58-5da4-445d-ba6c-a8df5c6e7364</p>
 
 ## Overview
 Recent advances in generative diffusion models have enabled text-controlled synthesis of realistic and diverse images with impressive quality. Despite these remarkable advances, the application of text-to-image generative models in computer vision for standard visual recognition tasks remains limited. The current de facto approach for these tasks is to design model architectures and loss functions that are tailored to the task at hand. In this project, we develop a unified language interface for computer vision tasks that abstracts away task specific design choices and enables task execution by following natural language instructions. Our approach involves casting multiple computer vision tasks as text-to-image generation problems. Here, the text represents an instruction describing the task, and the resulting image is a visually-encoded task output. To train our model, we pool commonly-used computer vision datasets covering a range of tasks, including segmentation, object detection, depth estimation, and classification. We then use a large language model to paraphrase prompt templates that convey the specific tasks to be conducted on each image, and through this process, we create a multi-modal and multi-task training dataset comprising input and output images along with annotated instructions. Following the InstructPix2Pix architecture, we apply instruction-tuning to a text-to-image diffusion model using our constructed dataset, steering its functionality from a generative model to an instruction-guided multi-task vision learner. 
