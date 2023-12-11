@@ -17,7 +17,7 @@ from cog import BasePredictor, Input, Path
 class Predictor(BasePredictor):
     def setup(self) -> None:
         """Load the model into memory to make running multiple predictions efficient"""
-        model_id = "alaa-lab/InstructCV"
+        model_id = "andreschait/Gradio-TTI"
         self.pipe = StableDiffusionInstructPix2PixPipeline.from_pretrained(
             model_id,
             cache_dir="model_cache",
@@ -29,7 +29,7 @@ class Predictor(BasePredictor):
         self,
         image: Path = Input(description="Input image"),
         instruction: str = Input(
-            description="Provide an instruction outlining the specific vision task you wish InstructCV to perform"
+            description="Provide an instruction outlining the specific vision task you wish Gradio-TTI to perform"
         ),
         text_guidance_scale: float = Input(
             description="Scale for classifier-free guidance. Higher guidance scale encourages to generate images that are closely linked to the text prompt, usually at the expense of lower image quality.",
