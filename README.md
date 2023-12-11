@@ -33,11 +33,11 @@ cd mmdetection
 pip install -v -e .
 ```
 ## Get Started
-See [Preparing Datasets for InstructCV](DATASET.md).
+See [Preparing Datasets for Gradio-TTI](DATASET.md).
 
-See [Getting Started with InstructCV](GETTING_STARTED.md) for detailed instructions on training and inference with InstructCV.
+See [Getting Started with Gradio-TTI](GETTING_STARTED.md) for detailed instructions on training and inference with Gradio-TTI.
 
-## InstructCV-RP checkpoint
+## Gradio-TTI checkpoint
 <table>
 <thead>
   <tr>
@@ -62,7 +62,7 @@ See [Getting Started with InstructCV](GETTING_STARTED.md) for detailed instructi
     <td align="center">VOC</td>
   </tr>
   <tr>
-    <td align="center"><a href="configs/Panoptic/odise_label_coco_50e.py"> InstructCV-RP </a></td>
+    <td align="center"><a href="configs/Panoptic/odise_label_coco_50e.py"> Gradio-TTI </a></td>
     <td align="center">0.297</td>
     <td align="center">0.279</td>
     <td align="center">47.235</td>
@@ -78,9 +78,9 @@ See [Getting Started with InstructCV](GETTING_STARTED.md) for detailed instructi
 
 ## Demo
 
-* Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). Try out the web demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/alaa-lab/InstructCV)
+* Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). Try out the web demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/andreschait/Gradio-TTI)
 
-* Run the demo on Google Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YDI2kb6uPP1d1VsiarFDapufRtkYso4g)
+* Run the demo on Google Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gK1QSZl_CRf0KLpP0Ahwivt-qpobqQdS)
 
 The pre-trained model for Stable Diffusion is subject to its original license terms from [Stable Diffusion](https://github.com/CompVis/stable-diffusion).
 
